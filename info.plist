@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>org.nadel.notefred</string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>08C6176C-A73D-4D9C-889F-89ABD880743A</key>
+		<key>1A741966-5341-40BC-996D-68EAB30F62AA</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>DF453589-35D9-4C90-A2D7-F1FF0D6B9AB6</string>
+				<string>73CD1003-1EB6-41AD-9205-DC88881924D8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -19,37 +21,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>2238C63B-8B7B-482C-AFFE-97731EC31631</key>
+		<key>5516F9BE-3D20-49D8-A101-7D7FD2461EFB</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6999AEA0-0027-4C7E-BF12-4303E17BBBEC</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>6999AEA0-0027-4C7E-BF12-4303E17BBBEC</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>DF453589-35D9-4C90-A2D7-F1FF0D6B9AB6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>BEB65785-8394-4916-BBC8-CBB35246A64A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>08C6176C-A73D-4D9C-889F-89ABD880743A</string>
+				<string>73CD1003-1EB6-41AD-9205-DC88881924D8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -62,7 +38,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>DF453589-35D9-4C90-A2D7-F1FF0D6B9AB6</string>
+				<string>73CD1003-1EB6-41AD-9205-DC88881924D8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -75,32 +51,13 @@
 	<key>createdby</key>
 	<string>Michael Nadel</string>
 	<key>description</key>
-	<string>Search Notes.app from Alfred</string>
+	<string>Search Notes.app notes from Alfred</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
 	<string>Notefred</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>notes://showNote?identifier={query}</string>
-				<key>utf8</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>DF453589-35D9-4C90-A2D7-F1FF0D6B9AB6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -153,90 +110,119 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>todos</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>/Users/mikenadel/Projects/go/bin/notefred search TODOs</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Open TODOs</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>1A741966-5341-40BC-996D-68EAB30F62AA</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>notes://showNote?identifier={query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>73CD1003-1EB6-41AD-9205-DC88881924D8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>keyword</key>
 				<string>captainslog</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Captain's Log</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>BEB65785-8394-4916-BBC8-CBB35246A64A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
 				<key>script</key>
-				<string>/Users/mikenadel/Projects/go/bin/notefred search --show-folder --ignore "Archived,Imported Notes" "Captain's Log"</string>
+				<string>/Users/mikenadel/Projects/go/bin/notefred search "Captain’s Log"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>08C6176C-A73D-4D9C-889F-89ABD880743A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/Users/mikenadel/Projects/go/bin/notefred search --show-folder --ignore "Archived,Imported Notes" "My GSDs"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>6999AEA0-0027-4C7E-BF12-4303E17BBBEC</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>ng</string>
 				<key>subtext</key>
 				<string></string>
-				<key>text</key>
-				<string>My GSDs</string>
+				<key>title</key>
+				<string>Captain's Log, Stardate Today</string>
+				<key>type</key>
+				<integer>5</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>2238C63B-8B7B-482C-AFFE-97731EC31631</string>
+			<string>5516F9BE-3D20-49D8-A101-7D7FD2461EFB</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -257,59 +243,48 @@ end alfred_script</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Search Notes.app by title (with `nt`).</string>
+	<string>Search Notes.app
+- By Title
+- For a daily log (Captain's Log)
+- For your todos</string>
 	<key>uidata</key>
 	<dict>
-		<key>08C6176C-A73D-4D9C-889F-89ABD880743A</key>
+		<key>1A741966-5341-40BC-996D-68EAB30F62AA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>475</integer>
+			<integer>65</integer>
 			<key>ypos</key>
-			<integer>230</integer>
+			<integer>205</integer>
 		</dict>
-		<key>2238C63B-8B7B-482C-AFFE-97731EC31631</key>
+		<key>5516F9BE-3D20-49D8-A101-7D7FD2461EFB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>65</integer>
 			<key>ypos</key>
-			<integer>385</integer>
+			<integer>345</integer>
 		</dict>
 		<key>5ADEB109-2C47-4611-B75E-8B710AD3329D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>815</integer>
+			<integer>380</integer>
 			<key>ypos</key>
-			<integer>550</integer>
+			<integer>410</integer>
 		</dict>
-		<key>6999AEA0-0027-4C7E-BF12-4303E17BBBEC</key>
-		<dict>
-			<key>xpos</key>
-			<integer>475</integer>
-			<key>ypos</key>
-			<integer>385</integer>
-		</dict>
-		<key>BEB65785-8394-4916-BBC8-CBB35246A64A</key>
-		<dict>
-			<key>xpos</key>
-			<integer>230</integer>
-			<key>ypos</key>
-			<integer>230</integer>
-		</dict>
-		<key>D14874E6-A2AF-4386-A5E4-15D8F6C2AD6C</key>
-		<dict>
-			<key>xpos</key>
-			<integer>235</integer>
-			<key>ypos</key>
-			<integer>70</integer>
-		</dict>
-		<key>DF453589-35D9-4C90-A2D7-F1FF0D6B9AB6</key>
+		<key>73CD1003-1EB6-41AD-9205-DC88881924D8</key>
 		<dict>
 			<key>note</key>
 			<string>open note</string>
 			<key>xpos</key>
-			<integer>810</integer>
+			<integer>350</integer>
 			<key>ypos</key>
+			<integer>205</integer>
+		</dict>
+		<key>D14874E6-A2AF-4386-A5E4-15D8F6C2AD6C</key>
+		<dict>
+			<key>xpos</key>
 			<integer>65</integer>
+			<key>ypos</key>
+			<integer>60</integer>
 		</dict>
 	</dict>
 	<key>version</key>
